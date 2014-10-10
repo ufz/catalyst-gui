@@ -48,5 +48,5 @@ cmake ^
   -DModule_vtkCommonComputationalGeometry:BOOL=ON ^
   -DModule_vtkIOExport:BOOL=ON ^
   -DPARAVIEW_USE_UNIFIED_BINDINGS:BOOL=ON ^
-  -DPARAVIEW_GIT_DESCRIBE="v4.2.0-2-ga46f27b" ^
+  -DPARAVIEW_GIT_DESCRIBE="v4.2.0-4-g27492a3" ^
 %1 %2 %3 %4 %5 %6 %7 %8 %9
