@@ -1,25 +1,18 @@
 #!/bin/bash
 cmake \
   --no-warn-unused-cli\
-  -DPARAVIEW_CS_MODULES:STRING="vtkPVServerManagerCore;vtkPVServerImplementationCore;vtkPVServerImplementationRendering;vtkIOParallelXML;vtkFiltersGeneric;vtkPVVTKExtensionsCore;vtkRenderingGL2PS;vtkPVServerManagerRendering;vtkIOXML;vtkCommonMisc;vtkIOGeometry;vtkParallelCore;vtkFiltersGeneral;vtkFiltersGeometry;vtkImagingColor;vtkPVServerManagerApplication;vtkFiltersModeling;vtkFiltersParallelMPI;vtkIOImage;vtkInteractionWidgets;vtkFiltersParallel;vtkImagingCore;vtkFiltersHyperTree;vtkIOExport;vtkIOParallel;vtkCommonTransforms;vtkCommonSystem;vtkRenderingCore;vtkRenderingContextOpenGL;vtkChartsCore;vtkCommonDataModel;vtkRenderingAnnotation;vtkPVClientServerCoreRendering;vtkCommonCore;vtkParallelMPI;vtkRenderingFreeType;vtkViewsCore;vtkRenderingLabel;vtkFiltersExtraction;vtkPVVTKExtensionsDefault;vtkPVVTKExtensionsRendering;vtkCommonColor;vtkInfovisCore;vtkImagingHybrid;vtkCommonComputationalGeometry;vtkRenderingParallel;vtkRenderingContext2D;vtkRenderingOpenGL;vtkIOCore;vtkFiltersTexture;vtkFiltersSources;vtkPVClientServerCoreCore;vtkCommonExecutionModel;vtkIOXMLParser;vtkInteractionStyle;vtkPVCommon;vtkFiltersCore;vtkCommonMath;vtkViewsContext2D;vtkIOLegacy" \
-  -DVTK_WRAP_PYTHON_MODULES:STRING="vtkPVServerManagerCore;vtkPVServerImplementationCore;vtkPVServerImplementationRendering;vtkIOParallelXML;vtkFiltersGeneric;vtkPVVTKExtensionsCore;vtkRenderingGL2PS;vtkPVServerManagerRendering;vtkIOXML;vtkCommonMisc;vtkIOGeometry;vtkParallelCore;vtkCommonDataModel;vtkFiltersGeometry;vtkImagingColor;vtkPVServerManagerApplication;vtkFiltersModeling;vtkFiltersParallelMPI;vtkIOImage;vtkInteractionWidgets;vtkFiltersParallel;vtkImagingCore;vtkFiltersHyperTree;vtkIOExport;vtkIOParallel;vtkCommonTransforms;vtkCommonSystem;vtkRenderingCore;vtkPVCatalyst;vtkRenderingContextOpenGL;vtkFiltersProgrammable;vtkChartsCore;vtkFiltersGeneral;vtkRenderingAnnotation;vtkPVClientServerCoreRendering;vtkCommonCore;vtkPVPythonCatalyst;vtkParallelMPI;vtkRenderingFreeType;vtkViewsCore;vtkRenderingLabel;vtkFiltersExtraction;vtkPVVTKExtensionsDefault;vtkPVVTKExtensionsRendering;vtkCommonColor;vtkInfovisCore;vtkImagingHybrid;vtkCommonComputationalGeometry;vtkRenderingParallel;vtkRenderingContext2D;vtkRenderingOpenGL;vtkIOCore;vtkFiltersTexture;vtkFiltersSources;vtkPVClientServerCoreCore;vtkCommonExecutionModel;vtkIOXMLParser;vtkInteractionStyle;vtkPVCommon;vtkFiltersCore;vtkCommonMath;vtkViewsContext2D;vtkIOLegacy" \
-  -DModule_vtkImagingHybrid:BOOL=ON \
+  -DPARAVIEW_CS_MODULES:STRING="vtkPVServerManagerCore;vtkPVServerImplementationCore;vtkPVVTKExtensionsCore;vtkIOXML;vtkCommonMisc;vtkIOGeometry;vtkParallelCore;vtkCommonDataModel;vtkFiltersGeometry;vtkImagingColor;vtkPVServerManagerApplication;vtkInteractionWidgets;vtkImagingCore;vtkIOExport;vtkFiltersModeling;vtkCommonTransforms;vtkCommonSystem;vtkRenderingCore;vtkIOImage;vtkImagingHybrid;vtkCommonCore;vtkRenderingFreeType;vtkRenderingAnnotation;vtkFiltersExtraction;vtkFiltersGeneral;vtkFiltersTexture;vtkRenderingOpenGL;vtkIOCore;vtkFiltersSources;vtkPVClientServerCoreCore;vtkCommonExecutionModel;vtkIOXMLParser;vtkInteractionStyle;vtkPVCommon;vtkFiltersCore;vtkCommonMath" \
+  -DVTK_WRAP_PYTHON_MODULES:STRING="vtkPVServerManagerCore;vtkPVServerImplementationCore;vtkPVVTKExtensionsCore;vtkIOXML;vtkCommonMisc;vtkIOGeometry;vtkParallelCore;vtkCommonDataModel;vtkFiltersGeometry;vtkImagingColor;vtkPVServerManagerApplication;vtkInteractionWidgets;vtkImagingCore;vtkIOExport;vtkFiltersModeling;vtkCommonTransforms;vtkCommonSystem;vtkRenderingCore;vtkPVCatalyst;vtkIOImage;vtkImagingHybrid;vtkCommonCore;vtkRenderingFreeType;vtkRenderingAnnotation;vtkFiltersExtraction;vtkFiltersGeneral;vtkFiltersTexture;vtkRenderingOpenGL;vtkIOCore;vtkFiltersSources;vtkPVClientServerCoreCore;vtkCommonExecutionModel;vtkIOXMLParser;vtkInteractionStyle;vtkPVCommon;vtkFiltersCore;vtkCommonMath" \
   -DModule_vtkFiltersTexture:BOOL=ON \
-  -DModule_vtkFiltersParallelMPI:BOOL=ON \
-  -DModule_vtkIOLegacy:BOOL=ON \
-  -DPARAVIEW_BUILD_QT_GUI:BOOL=OFF \
-  -DModule_vtkRenderingContext2D:BOOL=ON \
-  -DModule_vtkFiltersGeneric:BOOL=ON \
   -DModule_vtkImagingColor:BOOL=ON \
-  -DPARAVIEW_ENABLE_PYTHON:BOOL=ON \
-  -DModule_vtkRenderingParallel:BOOL=ON \
+  -DModule_vtkIOImage:BOOL=ON \
+  -DPARAVIEW_ENABLE_PYTHON:BOOL=OFF \
+  -DModule_vtkInteractionWidgets:BOOL=ON \
   -DModule_vtkGUISupportQt:BOOL=ON \
   -DModule_vtkFiltersGeometry:BOOL=ON \
   -DModule_vtkInteractionStyle:BOOL=ON \
   -DModule_vtkImagingCore:BOOL=ON \
-  -DModule_vtkIOParallelXML:BOOL=ON \
-  -DModule_vtkFiltersParallel:BOOL=ON \
-  -DModule_vtkRenderingGL2PS:BOOL=ON \
+  -DModule_vtkFiltersExtraction:BOOL=ON \
   -DModule_vtkIOGeometry:BOOL=ON \
   -DModule_vtkRenderingAnnotation:BOOL=ON \
   -DCMAKE_BUILD_TYPE:STRING=Release \
@@ -28,26 +21,18 @@ cmake \
   -DModule_vtkRenderingFreeType:BOOL=ON \
   -DPARAVIEW_ENABLE_WEB:BOOL=OFF \
   -DBUILD_SHARED_LIBS:BOOL=OFF \
-  -DModule_vtkInteractionWidgets:BOOL=ON \
-  -DModule_vtkChartsCore:BOOL=ON \
   -DPARAVIEW_USE_ICE_T:BOOL=ON \
   -DModule_vtkFiltersModeling:BOOL=ON \
   -DModule_vtkRenderingCore:BOOL=ON \
   -DBUILD_TESTING:BOOL=OFF \
-  -DModule_vtkPVServerManagerRendering:BOOL=ON \
   -DPARAVIEW_USE_MPI:BOOL=OFF \
   -DModule_vtkRenderingOpenGL:BOOL=ON \
-  -DModule_vtkIOParallel:BOOL=ON \
-  -DModule_vtkCommonColor:BOOL=ON \
-  -DModule_vtkPVVTKExtensionsDefault:BOOL=ON \
   -DPARAVIEW_ENABLE_VTK_MODULES_AS_NEEDED:BOOL=OFF \
-  -DModule_vtkRenderingContextOpenGL:BOOL=ON \
-  -DModule_vtkPVVTKExtensionsRendering:BOOL=ON \
+  -DPARAVIEW_BUILD_QT_GUI:BOOL=OFF \
   -DModule_vtkFiltersSources:BOOL=ON \
   -DModule_vtkhdf5:BOOL=ON \
   -DVTK_ENABLE_KITS:BOOL=OFF \
-  -DModule_vtkCommonComputationalGeometry:BOOL=ON \
   -DModule_vtkIOExport:BOOL=ON \
-  -DPARAVIEW_USE_UNIFIED_BINDINGS:BOOL=ON \
+  -DModule_vtkImagingHybrid:BOOL=ON \
   -DPARAVIEW_GIT_DESCRIBE="v4.2.0-4-g27492a3" \
  "$@"

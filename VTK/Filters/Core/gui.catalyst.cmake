@@ -1,6 +1,20 @@
 list(APPEND Module_SRCS
-  vtkIdFilter.cxx
+  vtkArrayCalculator.cxx
   vtkCleanPolyData.cxx
-  vtkTriangleFilter.cxx
+  vtkContourFilter.cxx
+  vtkContourGrid.cxx
+  vtkContourHelper.cxx
+  vtkCutter.cxx
   vtkGlyph2D.cxx
+  vtkGlyph3D.cxx
+  vtkIdFilter.cxx
+  vtkGridSynchronizedTemplates3D.cxx
+  vtkMaskPoints.cxx
+  vtkPolyDataNormals.cxx
+  vtkRectilinearSynchronizedTemplates.cxx
+  vtkSynchronizedTemplates2D.cxx
+  vtkSynchronizedTemplates3D.cxx
+  vtkSynchronizedTemplatesCutter3D.cxx
+  vtkTriangleFilter.cxx
+  vtkTubeFilter.cxx
   )

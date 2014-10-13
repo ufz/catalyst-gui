@@ -19,7 +19,6 @@ vtk_module(vtkPVClientServerCoreCore
   GROUPS
     ParaViewCore
   DEPENDS
-    vtkFiltersExtraction
     # Explicitely list (rather than transiently through
     # vtkPVVTKExtensionsCore) because it allows us to turn of wrapping
     # of vtkPVVTKExtensionsCore off but still satisfy API dependcy.

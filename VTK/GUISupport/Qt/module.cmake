@@ -5,9 +5,9 @@ vtk_module(vtkGUISupportQt
     vtkCommonExecutionModel
     vtkRendering${VTK_RENDERING_BACKEND}
     vtkInteractionStyle
-    vtkImagingCore
-  PRIVATE_DEPENDS
-    vtkFiltersExtraction
+    # vtkImagingCore
+    # PRIVATE_DEPENDS
+    #  vtkFiltersExtraction
   TEST_DEPENDS
     vtkTestingCore
   EXCLUDE_FROM_WRAPPING
