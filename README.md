@@ -8,7 +8,7 @@
 git clone https://github.com/ufz/catalyst-gui.git
 mkdir build
 cd build
-../catalyst-gui/cmake.sh
+../catalyst-gui/cmake.sh ../catalyst-gui
 make
 ```
 
@@ -18,7 +18,7 @@ make
 git clone https://github.com/ufz/catalyst-gui.git
 mkdir build
 cd build
-..\catalyst-gui\cmake.bat
+..\catalyst-gui\cmake.bat ..\catalyst-gui
 msbuild /p:Configuration=Release /m:[NUM_PROCESSORS] ParaView.sln
 msbuild /p:Configuration=Debug /m:[NUM_PROCESSORS] ParaView.sln
 ```
